@@ -29,6 +29,7 @@ Mine, and I believe all MQB clusters use an 18-pin connector. Pinout is followin
 18) CAN-H - Here comes the CAN-H bus from the CAN bus module
 
 You also need to power your Arduino. For testing and configuration, you can run it off your PC's USB port, but you probably want to power it from your 12V PSU too. Connect 12V to the VIN pin on your nano, and GND to the GND pin next to it.
+Note on the power supply: Arduino Nano uses 5V as a power supply. For situations when both USB and VCC is connected, to protect the USB port, VCC should be 6V or greater. Due to the fact that Arduino Nano stabilises the voltage using a linear regulator, using voltages over 9V is generally not recommended, as the regulator works by dissipating voltage as a heat. In our use case, with just CAN bus module connected, this is not a concern, as the power draw is way below 100mA - we can afford to power the Nano from 12V power supply directly without adding extra complexity or a dedicated PSU for Nano.
 
 Now you can configure your Arduino. This is done via its serial port. You can use PuTTY or a serial monitor within Arduino IDE (baud rate 115200). Arduino will also report the current mileage there.
 
