@@ -1,4 +1,4 @@
-# MQBClusterMileageRoller
+# MQB Cluster Mileage Roller — Free Tool to Adjust Mileage in VAG Clusters (Passat, Golf, Octavia) [Open Source]
 A project that turns an Arduino Nano with an MCP2515 into a travel emulator.
 
 ## Purpose
